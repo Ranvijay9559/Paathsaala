@@ -1,0 +1,69 @@
+.home-hero {
+  background-image: url('https://th.bing.com/th/id/R.c016430b162049a28c326a70f5c9bcda?rik=2Vq99PGVo%2b54iw&pid=ImgRaw&r=0');
+
+
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+
+.overlay {
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.4), rgba(74, 144, 226, 0.8));
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-content {
+  text-align: center;
+  color: #fff;
+  max-width: 800px;
+  padding: 0 20px;
+
+  h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+    span {
+      color: #ffd700;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 32px;
+    }
+  }
+
+  p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #e0e0e0;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+
+  .common-btn {
+    background-color: #ffd700;
+    color: #000;
+    padding: 14px 28px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #fff;
+      color: #4a90e2;
+    }
+  }
+}

@@ -1,0 +1,157 @@
+.lecture-page {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  min-height: 80vh;
+  padding: 20px;
+  background-color: #f8f9fc;
+  font-family: 'Segoe UI', sans-serif;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left {
+    width: 70%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+
+    video {
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-top: 10px;
+      color: #4a4a4a;
+    }
+
+    h3 {
+      font-size: 18px;
+      color: #666;
+    }
+
+    @media (max-width: 768px) {
+      width: 90%;
+    }
+  }
+
+  .right {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media (max-width: 768px) {
+      width: 90%;
+    }
+
+    .lecture-form {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      text-align: center;
+
+      h2 {
+        font-size: 24px;
+        color: #4a90e2;
+        margin-bottom: 15px;
+      }
+
+      form {
+        text-align: left;
+
+        label {
+          display: block;
+          margin-bottom: 5px;
+          font-size: 14px;
+          color: #333;
+        }
+
+        input[type="text"],
+        input[type="file"] {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 15px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .lecture-number {
+      background-color: #fff;
+      padding: 12px;
+      border: 1px solid #ddd;
+      margin-top: 10px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: #4a90e2;
+        color: white;
+      }
+    }
+
+    .active {
+      background-color: #4a90e2;
+      color: white;
+      font-weight: bold;
+    }
+  }
+}
+
+.progress {
+  width: 40%;
+  background-color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin: 20px auto;
+  text-align: center;
+  color: #4a4a4a;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  font-size: 16px;
+
+  progress {
+    width: 100%;
+    height: 20px;
+    margin-top: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}
+
+.common-btn {
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+
+  &:hover {
+    background-color: #3a78c2;
+    transform: scale(1.05);
+  }
+}
+
+.common-btn[disabled] {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
